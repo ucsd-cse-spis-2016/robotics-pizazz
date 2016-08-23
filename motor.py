@@ -46,20 +46,7 @@ def reverse(speed=avgspeed):
    leftBottomPWM.ChangeDutyCycle(speed)
  
 
-def turnleft(rspeed=fastspeed,lspeed=slowspeed ):
-   if rspeed < lspeed:
-      print "Incorrect paramters: right motor speed should be greater than left motor speed"
-      return
-   rightTopPWM.ChangeDutyCycle(rspeed)
-   rightBottomPWM.ChangeDutyCycle(0)
-   leftTopPWM.ChangeDutyCycle(lspeed)
-   leftBottomPWM.ChangeDutyCycle(0)
-  
-
-def turnright(rspeed=slowspeed, lspeed=fastspeed):
-   if rspeed > lspeed:
-      print "Incorrect paramters: right motor speed should be less than left motor speed"
-      return
+def turn(rspeed=fastspeed,lspeed=slowspeed ):
    rightTopPWM.ChangeDutyCycle(rspeed)
    rightBottomPWM.ChangeDutyCycle(0)
    leftTopPWM.ChangeDutyCycle(lspeed)
