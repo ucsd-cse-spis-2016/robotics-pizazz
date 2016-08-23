@@ -38,14 +38,13 @@ def forward(speed=avgspeed):
    rightBottomPWM.ChangeDutyCycle(0)
    leftTopPWM.ChangeDutyCycle(speed)
    leftBottomPWM.ChangeDutyCycle(0)
-   print('forward')
-
+ 
 def reverse(speed=avgspeed):
    rightTopPWM.ChangeDutyCycle(0)
    rightBottomPWM.ChangeDutyCycle(speed)
    leftTopPWM.ChangeDutyCycle(0)
    leftBottomPWM.ChangeDutyCycle(speed)
-   print('reverse')
+ 
 
 def turnleft(rspeed=fastspeed,lspeed=slowspeed ):
    if rspeed < lspeed:
@@ -55,7 +54,7 @@ def turnleft(rspeed=fastspeed,lspeed=slowspeed ):
    rightBottomPWM.ChangeDutyCycle(0)
    leftTopPWM.ChangeDutyCycle(lspeed)
    leftBottomPWM.ChangeDutyCycle(0)
-   print('left')
+  
 
 def turnright(rspeed=slowspeed, lspeed=fastspeed):
    if rspeed > lspeed:
@@ -65,11 +64,11 @@ def turnright(rspeed=slowspeed, lspeed=fastspeed):
    rightBottomPWM.ChangeDutyCycle(0)
    leftTopPWM.ChangeDutyCycle(lspeed)
    leftBottomPWM.ChangeDutyCycle(0)
-   print('right')
+  
 
 def stopall():
    rightTopPWM.ChangeDutyCycle(0)
    rightBottomPWM.ChangeDutyCycle(0)
    leftTopPWM.ChangeDutyCycle(0)
    leftBottomPWM.ChangeDutyCycle(0)
-   print('stop')
+  
