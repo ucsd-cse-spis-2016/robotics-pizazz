@@ -32,12 +32,3 @@ def getDistance():
    distance = distance / 2
    return distance
 
-try:
-   setupSonar()
-   while True:
-       dist = getDistance()
-       print dist
-       time.sleep(1)
-
-except KeyboardInterrupt:
-       GPIO.cleanup()
