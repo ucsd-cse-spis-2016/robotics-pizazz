@@ -1,4 +1,4 @@
- Pizazz Motor Test
+# Pizazz Motor Test
 # Moves: Forward, Reverse, turn Right, turn Left, Stop - then repeat
 # Press Ctrl-C to stop
 #
