@@ -2,9 +2,8 @@ import RPi.GPIO as GPIO, time
 from sonar import *
 
 try:
-   setupSonar(sonarPin=8)
    while True:
-       dist = getDistance()
+       dist = getDistance(echoPin=8, trigPin=8)
        print dist
        time.sleep(1)
 
